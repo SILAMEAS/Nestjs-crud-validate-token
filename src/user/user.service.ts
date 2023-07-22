@@ -27,4 +27,7 @@ export class UserService {
   delete(id: number) {
     return this.usersRepository.delete(id);
   }
+  fintByEmail(email: string) {
+    return this.usersRepository.findOne({ where: { email } });
+  }
 }
