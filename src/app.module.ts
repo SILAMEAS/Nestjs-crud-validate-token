@@ -27,3 +27,15 @@ import { ProfileModule } from './profile/profile.module';
   providers: [AppService],
 })
 export class AppModule {}
+/*
+Connect with postgres must be install yarn add pg
+TypeOrmModule.forRoot({
+  type: 'postgres',
+  host: 'localhost',
+  port: 5432,
+  username: 'postgres',
+  password: '123',
+  database: 'nestjs',
+  entities: [User],
+  synchronize: true,
+}),*/
